@@ -1,5 +1,4 @@
-def find_line_of_word():
-    word="Gori"
+def find_line_of_word(word):
     line_no=0
     
     with open("Gori.txt") as f:
@@ -12,4 +11,5 @@ def find_line_of_word():
         else:
             print("Word not Found!")
 
-find_line_of_word()
+word=input("Enter your Word:")
+find_line_of_word(word)
