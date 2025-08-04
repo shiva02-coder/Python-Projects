@@ -1,0 +1,13 @@
+def even_num():
+    even_number=[]
+    count=0
+    with open("Goru.txt","r") as f:
+        data=f.read()
+        nums=data.split(",")
+        for val in nums:
+            if(int(val) % 2 == 0):
+                count+=1
+                even_number.append(val)
+        print("The values are: ",even_number, "Total Numbers: ",count)        
+
+even_num()
